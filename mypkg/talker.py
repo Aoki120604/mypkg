@@ -7,8 +7,7 @@ node = Node("talker")
 pub = node.create_publisher(Person, "person", 10)
 n = 0
 
-
-def cd():
+def cb():
     global n
     msg = Person()
     msg.name = "安藤碧輝"
@@ -18,5 +17,5 @@ def cd():
 
 
 def main():
-    node.create_timer(0.5,cb)
+    node.create_timer(0.5, cb)
     rclpy.spin(node)

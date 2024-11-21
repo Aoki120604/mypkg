@@ -1,0 +1,53 @@
+[0.204s] DEBUG:colcon:Command line arguments: ['/usr/bin/colcon', 'test']
+[0.204s] DEBUG:colcon:Parsed command line arguments: Namespace(abort_on_error=False, allow_overriding=[], base_paths=['.'], build_base='build', ctest_args=None, event_handlers=None, executor='parallel', ignore_user_meta=False, install_base='install', log_base=None, log_level=None, main=<bound method TestVerb.main of <colcon_core.verb.test.TestVerb object at 0x7f425cecf3d0>>, merge_install=False, metas=['./colcon.meta'], packages_above=None, packages_above_and_dependencies=None, packages_above_depth=None, packages_end=None, packages_ignore=None, packages_ignore_regex=None, packages_select=None, packages_select_build_failed=False, packages_select_by_dep=None, packages_select_regex=None, packages_select_test_failures=False, packages_skip=None, packages_skip_build_finished=False, packages_skip_by_dep=None, packages_skip_regex=None, packages_skip_test_passed=False, packages_skip_up_to=None, packages_start=None, packages_up_to=None, packages_up_to_regex=None, parallel_workers=16, paths=None, pytest_args=None, pytest_with_coverage=False, python_testing=None, retest_until_fail=0, retest_until_pass=0, return_code_on_test_failure=False, test_result_base=None, unittest_args=None, verb_extension=<colcon_core.verb.test.TestVerb object at 0x7f425cecf3d0>, verb_name='test', verb_parser=<colcon_defaults.argument_parser.defaults.DefaultArgumentsDecorator object at 0x7f425ce5f280>)
+[0.281s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) check parameters
+[0.281s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) check parameters
+[0.281s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) check parameters
+[0.281s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) check parameters
+[0.281s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) discover
+[0.281s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) discover
+[0.281s] INFO:colcon.colcon_core.package_discovery:Crawling recursively for packages in '/home/aoki/ros2_ws/src/mypkg'
+[0.281s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ignore', 'ignore_ament_install']
+[0.281s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore'
+[0.281s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore_ament_install'
+[0.282s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_pkg']
+[0.282s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_pkg'
+[0.282s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_meta']
+[0.282s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_meta'
+[0.282s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ros']
+[0.282s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ros'
+[0.290s] DEBUG:colcon.colcon_core.package_identification:Package '.' with type 'ros.ament_python' and name 'mypkg'
+[0.290s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) using defaults
+[0.290s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) discover
+[0.290s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) using defaults
+[0.290s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) discover
+[0.290s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) using defaults
+[0.291s] Level 5:colcon.colcon_core.verb:set package 'mypkg' test argument 'ctest_args' from command line to 'None'
+[0.291s] Level 5:colcon.colcon_core.verb:set package 'mypkg' test argument 'python_testing' from command line to 'None'
+[0.291s] Level 5:colcon.colcon_core.verb:set package 'mypkg' test argument 'pytest_args' from command line to 'None'
+[0.291s] Level 5:colcon.colcon_core.verb:set package 'mypkg' test argument 'pytest_with_coverage' from command line to 'False'
+[0.291s] Level 5:colcon.colcon_core.verb:set package 'mypkg' test argument 'unittest_args' from command line to 'None'
+[0.291s] Level 5:colcon.colcon_core.verb:set package 'mypkg' test argument 'retest_until_pass' from command line to '0'
+[0.291s] Level 5:colcon.colcon_core.verb:set package 'mypkg' test argument 'retest_until_fail' from command line to '0'
+[0.291s] DEBUG:colcon.colcon_core.verb.test:Testing package 'mypkg' with the following arguments: {'build_base': '/home/aoki/ros2_ws/src/mypkg/build/mypkg', 'ctest_args': None, 'install_base': '/home/aoki/ros2_ws/src/mypkg/install/mypkg', 'path': '/home/aoki/ros2_ws/src/mypkg', 'pytest_args': None, 'pytest_with_coverage': False, 'python_testing': None, 'retest_until_fail': 0, 'retest_until_pass': 0, 'test_result_base': None, 'unittest_args': None}
+[0.291s] INFO:colcon.colcon_core.executor:Executing jobs using 'parallel' executor
+[0.292s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete
+[0.292s] INFO:colcon.colcon_ros.task.ament_python.test:Testing ROS package in '/home/aoki/ros2_ws/src/mypkg' with build type'ament_python'
+[0.293s] INFO:colcon.colcon_core.task.python.test:Testing Python package in '/home/aoki/ros2_ws/src/mypkg'
+[0.294s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_core.shell.bat': Not used on non-Windows systems
+[0.294s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.294s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.443s] Level 1:colcon.colcon_core.task.python.test:test() by extension 'pytest'
+[0.444s] Level 1:colcon.colcon_core.task.python.test:test.step() by extension 'pytest'
+[0.445s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/aoki/ros2_ws/src/mypkg': AMENT_PREFIX_PATH=/home/aoki/ros2_ws/src/mypkg/install/mypkg:${AMENT_PREFIX_PATH} PYTEST_ADDOPTS=--tb=short --junit-xml=/home/aoki/ros2_ws/src/mypkg/build/mypkg/pytest.xml --junit-prefix=mypkg -o cache_dir=/home/aoki/ros2_ws/src/mypkg/build/mypkg/.pytest_cache PYTHONDONTWRITEBYTECODE=1 PYTHONPATH=/home/aoki/ros2_ws/src/mypkg/install/mypkg/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 -m pytest
+[1.154s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/aoki/ros2_ws/src/mypkg' returned '1': AMENT_PREFIX_PATH=/home/aoki/ros2_ws/src/mypkg/install/mypkg:${AMENT_PREFIX_PATH} PYTEST_ADDOPTS=--tb=short --junit-xml=/home/aoki/ros2_ws/src/mypkg/build/mypkg/pytest.xml --junit-prefix=mypkg -o cache_dir=/home/aoki/ros2_ws/src/mypkg/build/mypkg/.pytest_cache PYTHONDONTWRITEBYTECODE=1 PYTHONPATH=/home/aoki/ros2_ws/src/mypkg/install/mypkg/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 -m pytest
+[1.155s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:closing loop
+[1.155s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:loop closed
+[1.155s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete finished with '0'
+[1.155s] DEBUG:colcon.colcon_core.event_reactor:joining thread
+[1.177s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.notify_send': Could not find 'notify-send'
+[1.177s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.terminal_notifier': Not used on non-Darwin systems
+[1.177s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.win32': Not used on non-Windows systems
+[1.177s] INFO:colcon.colcon_notification.desktop_notification:Sending desktop notification using 'notify2'
+[1.180s] DEBUG:colcon.colcon_notification.desktop_notification.notify2:Failed to initialize notify2: org.freedesktop.DBus.Error.ServiceUnknown: The name org.freedesktop.Notifications was not provided by any .service files
+[1.180s] DEBUG:colcon.colcon_core.event_reactor:joined thread

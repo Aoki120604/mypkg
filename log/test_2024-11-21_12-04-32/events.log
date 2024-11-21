@@ -1,0 +1,197 @@
+[0.000000] (-) TimerEvent: {}
+[0.001129] (mypkg) JobQueued: {'identifier': 'mypkg', 'dependencies': OrderedDict([('mypkg', '/home/aoki/ros2_ws/src/mypkg/install/mypkg')])}
+[0.001252] (mypkg) JobStarted: {'identifier': 'mypkg'}
+[0.100104] (-) TimerEvent: {}
+[0.152477] (mypkg) Command: {'cmd': ['/usr/bin/python3', '-m', 'pytest'], 'cwd': '/home/aoki/ros2_ws/src/mypkg', 'env': {'LESSOPEN': '| /usr/bin/lesspipe %s', 'USER': 'aoki', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/opt/rviz_ogre_vendor/lib:/opt/ros/foxy/lib/x86_64-linux-gnu:/opt/ros/foxy/lib', 'MOTD_SHOWN': 'update-motd', 'HOME': '/home/aoki', 'OLDPWD': '/home/aoki/ros2_ws/src', 'ROS_PYTHON_VERSION': '3', 'WSL_DISTRO_NAME': 'Ubuntu-20.04', 'WAYLAND_DISPLAY': 'wayland-0', 'COLCON_PREFIX_PATH': '/home/aoki/ros2_ws/install', 'ROS_DISTRO': 'foxy', 'LOGNAME': 'aoki', 'NAME': 'killerqueen', 'WSL_INTEROP': '/run/WSL/9_interop', 'PULSE_SERVER': 'unix:/mnt/wslg/PulseServer', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'TERM': 'xterm-256color', 'ROS_LOCALHOST_ONLY': '0', 'PATH': '/opt/ros/foxy/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/usr/lib/wsl/lib:/mnt/c/Windows/system32:/mnt/c/Windows:/mnt/c/Windows/System32/Wbem:/mnt/c/Windows/System32/WindowsPowerShell/v1.0/:/mnt/c/Windows/System32/OpenSSH/:/mnt/c/Program Files/dotnet/:/mnt/c/Program Files/MATLAB/R2024a/runtime/win64:/mnt/c/Program Files/MATLAB/R2024a/bin:/mnt/c/Users/aowar/AppData/Local/Microsoft/WindowsApps:/mnt/c/Users/aowar/AppData/Local/Programs/Microsoft VS Code/bin:/snap/bin', 'XDG_RUNTIME_DIR': '/mnt/wslg/runtime-dir', 'DISPLAY': ':0', 'LANG': 'C.UTF-8', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:', 'AMENT_PREFIX_PATH': '/home/aoki/ros2_ws/src/mypkg/install/mypkg:/home/aoki/ros2_ws/install/mypkg:/opt/ros/foxy', 'SHELL': '/bin/bash', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'PWD': '/home/aoki/ros2_ws/src/mypkg/build/mypkg', 'XDG_DATA_DIRS': '/usr/local/share:/usr/share:/var/lib/snapd/desktop', 'PYTHONPATH': '/home/aoki/ros2_ws/src/mypkg/install/mypkg/lib/python3.8/site-packages:/home/aoki/ros2_ws/install/mypkg/lib/python3.8/site-packages:/opt/ros/foxy/lib/python3.8/site-packages', 'COLCON': '1', 'WSL2_GUI_APPS_ENABLED': '1', 'HOSTTYPE': 'x86_64', 'WSLENV': '', 'PYTHONDONTWRITEBYTECODE': '1', 'PYTEST_ADDOPTS': '--tb=short --junit-xml=/home/aoki/ros2_ws/src/mypkg/build/mypkg/pytest.xml --junit-prefix=mypkg -o cache_dir=/home/aoki/ros2_ws/src/mypkg/build/mypkg/.pytest_cache'}, 'shell': False}
+[0.200383] (-) TimerEvent: {}
+[0.300753] (-) TimerEvent: {}
+[0.401030] (-) TimerEvent: {}
+[0.501309] (-) TimerEvent: {}
+[0.541140] (mypkg) StdoutLine: {'line': b'\x1b[1m============================= test session starts ==============================\x1b[0m\n'}
+[0.541340] (mypkg) StdoutLine: {'line': b'platform linux -- Python 3.8.10, pytest-4.6.9, py-1.8.1, pluggy-0.13.0\n'}
+[0.543999] (mypkg) StdoutLine: {'line': b'cachedir: build/mypkg/.pytest_cache\n'}
+[0.544110] (mypkg) StdoutLine: {'line': b'rootdir: /home/aoki/ros2_ws/src/mypkg\n'}
+[0.544150] (mypkg) StdoutLine: {'line': b'plugins: ament-pep257-0.9.8, ament-lint-0.9.8, ament-xmllint-0.9.8, launch-testing-ros-0.11.7, launch-testing-0.10.10, ament-copyright-0.9.8, ament-flake8-0.9.8, colcon-core-0.18.3, cov-2.8.1\n'}
+[0.601406] (-) TimerEvent: {}
+[0.611563] (mypkg) StdoutLine: {'line': b'\x1b[1mcollecting ... \x1b[0m\x1b[1m\n'}
+[0.611678] (mypkg) StdoutLine: {'line': b'collected 3 items                                                              \x1b[0m\n'}
+[0.612312] (mypkg) StdoutLine: {'line': b'\n'}
+[0.639327] (mypkg) StdoutLine: {'line': b'test/test_copyright.py \x1b[31mF\x1b[0m\x1b[36m                                                 [ 33%]\x1b[0m\n'}
+[0.702077] (-) TimerEvent: {}
+[0.782624] (mypkg) StdoutLine: {'line': b'test/test_flake8.py \x1b[31mF\x1b[0m\x1b[36m                                                    [ 66%]\x1b[0m\n'}
+[0.802432] (-) TimerEvent: {}
+[0.825421] (mypkg) StdoutLine: {'line': b'test/test_pep257.py \x1b[31mF\x1b[0m\x1b[36m                                                    [100%]\x1b[0m\n'}
+[0.825588] (mypkg) StdoutLine: {'line': b'\n'}
+[0.825682] (mypkg) StdoutLine: {'line': b'=================================== FAILURES ===================================\n'}
+[0.825859] (mypkg) StdoutLine: {'line': b'\x1b[31m\x1b[1m________________________________ test_copyright ________________________________\x1b[0m\n'}
+[0.825979] (mypkg) StdoutLine: {'line': b'\x1b[1m\x1b[31mtest/test_copyright.py\x1b[0m:23: in test_copyright\n'}
+[0.826053] (mypkg) StdoutLine: {'line': b"\x1b[1m    assert rc == 0, 'Found errors'\x1b[0m\n"}
+[0.826089] (mypkg) StdoutLine: {'line': b'\x1b[1m\x1b[31mE   AssertionError: Found errors\x1b[0m\n'}
+[0.826166] (mypkg) StdoutLine: {'line': b'\x1b[1m\x1b[31mE   assert 1 == 0\x1b[0m\n'}
+[0.826262] (mypkg) StdoutLine: {'line': b'----------------------------- Captured stderr call -----------------------------\n'}
+[0.826558] (mypkg) StdoutLine: {'line': b'CONTRIBUTING.md: file not found\n'}
+[0.826661] (mypkg) StdoutLine: {'line': b'LICENSE: file not found\n'}
+[0.826700] (mypkg) StdoutLine: {'line': b'build/mypkg/build/lib/mypkg/listener.py: could not find copyright notice\n'}
+[0.826733] (mypkg) StdoutLine: {'line': b'build/mypkg/build/lib/mypkg/talker.py: could not find copyright notice\n'}
+[0.826762] (mypkg) StdoutLine: {'line': b'build/mypkg/prefix_override/sitecustomize.py: could not find copyright notice\n'}
+[0.826793] (mypkg) StdoutLine: {'line': b'install/_local_setup_util_ps1.py: copyright=Dirk Thomas (2016-2019), license=<unknown>\n'}
+[0.826871] (mypkg) StdoutLine: {'line': b'install/_local_setup_util_sh.py: copyright=Dirk Thomas (2016-2019), license=<unknown>\n'}
+[0.827291] (mypkg) StdoutLine: {'line': b'install/mypkg/lib/python3.8/site-packages/mypkg/listener.py: could not find copyright notice\n'}
+[0.827361] (mypkg) StdoutLine: {'line': b'install/mypkg/lib/python3.8/site-packages/mypkg/talker.py: could not find copyright notice\n'}
+[0.827397] (mypkg) StdoutLine: {'line': b'listener.py: could not find copyright notice\n'}
+[0.827427] (mypkg) StdoutLine: {'line': b'mypkg/listener.py: could not find copyright notice\n'}
+[0.827456] (mypkg) StdoutLine: {'line': b'mypkg/mypkg/CONTRIBUTING.md: file not found\n'}
+[0.827483] (mypkg) StdoutLine: {'line': b'mypkg/mypkg/LICENSE: file not found\n'}
+[0.827511] (mypkg) StdoutLine: {'line': b'mypkg/talker.py: could not find copyright notice\n'}
+[0.827537] (mypkg) StdoutLine: {'line': b'talker.py: could not find copyright notice\n'}
+[0.827562] (mypkg) StdoutLine: {'line': b'15 errors, checked 21 files\n'}
+[0.827620] (mypkg) StdoutLine: {'line': b'\x1b[31m\x1b[1m_________________________________ test_flake8 __________________________________\x1b[0m\n'}
+[0.827661] (mypkg) StdoutLine: {'line': b'\x1b[1m\x1b[31mtest/test_flake8.py\x1b[0m:23: in test_flake8\n'}
+[0.827757] (mypkg) StdoutLine: {'line': b'\x1b[1m    assert rc == 0, \\\x1b[0m\n'}
+[0.827852] (mypkg) StdoutLine: {'line': b'\x1b[1m\x1b[31mE   AssertionError: Found 13 code style errors / warnings:\x1b[0m\n'}
+[0.827947] (mypkg) StdoutLine: {'line': b'\x1b[1m\x1b[31mE     ./listener.py:5:1: E302 expected 2 blank lines, found 1\x1b[0m\n'}
+[0.828042] (mypkg) StdoutLine: {'line': b'\x1b[1m\x1b[31mE     ./listener.py:19:1: E302 expected 2 blank lines, found 1\x1b[0m\n'}
+[0.828136] (mypkg) StdoutLine: {'line': b'\x1b[1m\x1b[31mE     ./listener.py:30:1: E305 expected 2 blank lines after class or function definition, found 1\x1b[0m\n'}
+[0.828231] (mypkg) StdoutLine: {'line': b"\x1b[1m\x1b[31mE     ./talker.py:20:26: E231 missing whitespace after ','\x1b[0m\n"}
+[0.828325] (mypkg) StdoutLine: {'line': b'\x1b[1m\x1b[31mE     ./install/mypkg/lib/python3.8/site-packages/mypkg/listener.py:1:1: E902 TokenError: EOF in multi-line statement\x1b[0m\n'}
+[0.828420] (mypkg) StdoutLine: {'line': b'\x1b[1m\x1b[31mE     ./install/mypkg/lib/python3.8/site-packages/mypkg/listener.py:17:2: W291 trailing whitespace\x1b[0m\n'}
+[0.828515] (mypkg) StdoutLine: {'line': b"\x1b[1m\x1b[31mE     ./install/mypkg/lib/python3.8/site-packages/mypkg/talker.py:20:26: E231 missing whitespace after ','\x1b[0m\n"}
+[0.828609] (mypkg) StdoutLine: {'line': b'\x1b[1m\x1b[31mE     ./mypkg/listener.py:1:1: E902 TokenError: EOF in multi-line statement\x1b[0m\n'}
+[0.828908] (mypkg) StdoutLine: {'line': b'\x1b[1m\x1b[31mE     ./mypkg/listener.py:17:2: W291 trailing whitespace\x1b[0m\n'}
+[0.828949] (mypkg) StdoutLine: {'line': b"\x1b[1m\x1b[31mE     ./mypkg/talker.py:20:26: E231 missing whitespace after ','\x1b[0m\n"}
+[0.828978] (mypkg) StdoutLine: {'line': b'\x1b[1m\x1b[31mE     ./build/mypkg/build/lib/mypkg/listener.py:1:1: E902 TokenError: EOF in multi-line statement\x1b[0m\n'}
+[0.829006] (mypkg) StdoutLine: {'line': b'\x1b[1m\x1b[31mE     ./build/mypkg/build/lib/mypkg/listener.py:17:2: W291 trailing whitespace\x1b[0m\n'}
+[0.829033] (mypkg) StdoutLine: {'line': b"\x1b[1m\x1b[31mE     ./build/mypkg/build/lib/mypkg/talker.py:20:26: E231 missing whitespace after ','\x1b[0m\n"}
+[0.829058] (mypkg) StdoutLine: {'line': b'\x1b[1m\x1b[31mE   assert 1 == 0\x1b[0m\n'}
+[0.829085] (mypkg) StdoutLine: {'line': b'----------------------------- Captured stdout call -----------------------------\n'}
+[0.829111] (mypkg) StdoutLine: {'line': b'\n'}
+[0.829136] (mypkg) StdoutLine: {'line': b'./listener.py:5:1: E302 expected 2 blank lines, found 1\n'}
+[0.829162] (mypkg) StdoutLine: {'line': b'class ListenerNode(Node):\n'}
+[0.829186] (mypkg) StdoutLine: {'line': b'^\n'}
+[0.829211] (mypkg) StdoutLine: {'line': b'\n'}
+[0.829235] (mypkg) StdoutLine: {'line': b'./listener.py:19:1: E302 expected 2 blank lines, found 1\n'}
+[0.829259] (mypkg) StdoutLine: {'line': b'def main():\n'}
+[0.829283] (mypkg) StdoutLine: {'line': b'^\n'}
+[0.829305] (mypkg) StdoutLine: {'line': b'\n'}
+[0.829329] (mypkg) StdoutLine: {'line': b'./listener.py:30:1: E305 expected 2 blank lines after class or function definition, found 1\n'}
+[0.829353] (mypkg) StdoutLine: {'line': b"if __name__ == '__main__':\n"}
+[0.829378] (mypkg) StdoutLine: {'line': b'^\n'}
+[0.829402] (mypkg) StdoutLine: {'line': b'\n'}
+[0.829425] (mypkg) StdoutLine: {'line': b"./talker.py:20:26: E231 missing whitespace after ','\n"}
+[0.829453] (mypkg) StdoutLine: {'line': b'    node.create_timer(0.5,cd)\n'}
+[0.829477] (mypkg) StdoutLine: {'line': b'                         ^\n'}
+[0.829500] (mypkg) StdoutLine: {'line': b'\n'}
+[0.829523] (mypkg) StdoutLine: {'line': b'./install/mypkg/lib/python3.8/site-packages/mypkg/listener.py:1:1: E902 TokenError: EOF in multi-line statement\n'}
+[0.829548] (mypkg) StdoutLine: {'line': b'import rclpy\n'}
+[0.829572] (mypkg) StdoutLine: {'line': b'^\n'}
+[0.829595] (mypkg) StdoutLine: {'line': b'\n'}
+[0.829618] (mypkg) StdoutLine: {'line': b'./install/mypkg/lib/python3.8/site-packages/mypkg/listener.py:17:2: W291 trailing whitespace\n'}
+[0.829645] (mypkg) StdoutLine: {'line': b'~                           \n'}
+[0.829672] (mypkg) StdoutLine: {'line': b' ^\n'}
+[0.829699] (mypkg) StdoutLine: {'line': b'\n'}
+[0.829726] (mypkg) StdoutLine: {'line': b"./install/mypkg/lib/python3.8/site-packages/mypkg/talker.py:20:26: E231 missing whitespace after ','\n"}
+[0.829754] (mypkg) StdoutLine: {'line': b'    node.create_timer(0.5,cd)\n'}
+[0.829780] (mypkg) StdoutLine: {'line': b'                         ^\n'}
+[0.829807] (mypkg) StdoutLine: {'line': b'\n'}
+[0.829849] (mypkg) StdoutLine: {'line': b'./mypkg/listener.py:1:1: E902 TokenError: EOF in multi-line statement\n'}
+[0.829908] (mypkg) StdoutLine: {'line': b'import rclpy\n'}
+[0.829941] (mypkg) StdoutLine: {'line': b'^\n'}
+[0.829972] (mypkg) StdoutLine: {'line': b'\n'}
+[0.830004] (mypkg) StdoutLine: {'line': b'./mypkg/listener.py:17:2: W291 trailing whitespace\n'}
+[0.830032] (mypkg) StdoutLine: {'line': b'~                           \n'}
+[0.830061] (mypkg) StdoutLine: {'line': b' ^\n'}
+[0.830088] (mypkg) StdoutLine: {'line': b'\n'}
+[0.830116] (mypkg) StdoutLine: {'line': b"./mypkg/talker.py:20:26: E231 missing whitespace after ','\n"}
+[0.830144] (mypkg) StdoutLine: {'line': b'    node.create_timer(0.5,cd)\n'}
+[0.830172] (mypkg) StdoutLine: {'line': b'                         ^\n'}
+[0.830201] (mypkg) StdoutLine: {'line': b'\n'}
+[0.830229] (mypkg) StdoutLine: {'line': b'./build/mypkg/build/lib/mypkg/listener.py:1:1: E902 TokenError: EOF in multi-line statement\n'}
+[0.830258] (mypkg) StdoutLine: {'line': b'import rclpy\n'}
+[0.830286] (mypkg) StdoutLine: {'line': b'^\n'}
+[0.830313] (mypkg) StdoutLine: {'line': b'\n'}
+[0.830340] (mypkg) StdoutLine: {'line': b'./build/mypkg/build/lib/mypkg/listener.py:17:2: W291 trailing whitespace\n'}
+[0.830368] (mypkg) StdoutLine: {'line': b'~                           \n'}
+[0.830396] (mypkg) StdoutLine: {'line': b' ^\n'}
+[0.830423] (mypkg) StdoutLine: {'line': b'\n'}
+[0.830449] (mypkg) StdoutLine: {'line': b"./build/mypkg/build/lib/mypkg/talker.py:20:26: E231 missing whitespace after ','\n"}
+[0.830477] (mypkg) StdoutLine: {'line': b'    node.create_timer(0.5,cd)\n'}
+[0.830504] (mypkg) StdoutLine: {'line': b'                         ^\n'}
+[0.830532] (mypkg) StdoutLine: {'line': b'\n'}
+[0.830557] (mypkg) StdoutLine: {'line': b"4     E231 missing whitespace after ','\n"}
+[0.830584] (mypkg) StdoutLine: {'line': b'2     E302 expected 2 blank lines, found 1\n'}
+[0.830612] (mypkg) StdoutLine: {'line': b'1     E305 expected 2 blank lines after class or function definition, found 1\n'}
+[0.830638] (mypkg) StdoutLine: {'line': b'3     E902 TokenError: EOF in multi-line statement\n'}
+[0.830665] (mypkg) StdoutLine: {'line': b'3     W291 trailing whitespace\n'}
+[0.830692] (mypkg) StdoutLine: {'line': b'\n'}
+[0.830720] (mypkg) StdoutLine: {'line': b'18 files checked\n'}
+[0.830748] (mypkg) StdoutLine: {'line': b'13 errors\n'}
+[0.830775] (mypkg) StdoutLine: {'line': b'\n'}
+[0.830802] (mypkg) StdoutLine: {'line': b"'E'-type errors: 10\n"}
+[0.830830] (mypkg) StdoutLine: {'line': b"'W'-type errors: 3\n"}
+[0.830857] (mypkg) StdoutLine: {'line': b'\n'}
+[0.830883] (mypkg) StdoutLine: {'line': b'Checked files:\n'}
+[0.830911] (mypkg) StdoutLine: {'line': b'\n'}
+[0.830937] (mypkg) StdoutLine: {'line': b'* ./setup.py\n'}
+[0.830963] (mypkg) StdoutLine: {'line': b'* ./listener.py\n'}
+[0.830988] (mypkg) StdoutLine: {'line': b'* ./talker.py\n'}
+[0.831015] (mypkg) StdoutLine: {'line': b'* ./install/_local_setup_util_ps1.py\n'}
+[0.831041] (mypkg) StdoutLine: {'line': b'* ./install/_local_setup_util_sh.py\n'}
+[0.831067] (mypkg) StdoutLine: {'line': b'* ./install/mypkg/lib/python3.8/site-packages/mypkg/__init__.py\n'}
+[0.831093] (mypkg) StdoutLine: {'line': b'* ./install/mypkg/lib/python3.8/site-packages/mypkg/listener.py\n'}
+[0.831119] (mypkg) StdoutLine: {'line': b'* ./install/mypkg/lib/python3.8/site-packages/mypkg/talker.py\n'}
+[0.831145] (mypkg) StdoutLine: {'line': b'* ./mypkg/__init__.py\n'}
+[0.831171] (mypkg) StdoutLine: {'line': b'* ./mypkg/listener.py\n'}
+[0.831202] (mypkg) StdoutLine: {'line': b'* ./mypkg/talker.py\n'}
+[0.831231] (mypkg) StdoutLine: {'line': b'* ./test/test_pep257.py\n'}
+[0.831259] (mypkg) StdoutLine: {'line': b'* ./test/test_flake8.py\n'}
+[0.831286] (mypkg) StdoutLine: {'line': b'* ./test/test_copyright.py\n'}
+[0.831312] (mypkg) StdoutLine: {'line': b'* ./build/mypkg/build/lib/mypkg/__init__.py\n'}
+[0.831340] (mypkg) StdoutLine: {'line': b'* ./build/mypkg/build/lib/mypkg/listener.py\n'}
+[0.831368] (mypkg) StdoutLine: {'line': b'* ./build/mypkg/build/lib/mypkg/talker.py\n'}
+[0.831394] (mypkg) StdoutLine: {'line': b'* ./build/mypkg/prefix_override/sitecustomize.py\n'}
+[0.831421] (mypkg) StdoutLine: {'line': b'\x1b[31m\x1b[1m_________________________________ test_pep257 __________________________________\x1b[0m\n'}
+[0.831449] (mypkg) StdoutLine: {'line': b'\x1b[1m\x1b[31mtest/test_pep257.py\x1b[0m:23: in test_pep257\n'}
+[0.831475] (mypkg) StdoutLine: {'line': b"\x1b[1m    assert rc == 0, 'Found code style errors / warnings'\x1b[0m\n"}
+[0.831501] (mypkg) StdoutLine: {'line': b'\x1b[1m\x1b[31mE   AssertionError: Found code style errors / warnings\x1b[0m\n'}
+[0.831528] (mypkg) StdoutLine: {'line': b'\x1b[1m\x1b[31mE   assert 1 == 0\x1b[0m\n'}
+[0.831556] (mypkg) StdoutLine: {'line': b'----------------------------- Captured stdout call -----------------------------\n'}
+[0.831582] (mypkg) StdoutLine: {'line': b'checking ./build/mypkg/build/lib/mypkg/__init__.py\n'}
+[0.831608] (mypkg) StdoutLine: {'line': b'checking ./build/mypkg/build/lib/mypkg/listener.py\n'}
+[0.831634] (mypkg) StdoutLine: {'line': b'checking ./build/mypkg/build/lib/mypkg/talker.py\n'}
+[0.831660] (mypkg) StdoutLine: {'line': b'checking ./build/mypkg/prefix_override/sitecustomize.py\n'}
+[0.831722] (mypkg) StdoutLine: {'line': b'checking ./install/_local_setup_util_ps1.py\n'}
+[0.831763] (mypkg) StdoutLine: {'line': b'checking ./install/_local_setup_util_sh.py\n'}
+[0.831797] (mypkg) StdoutLine: {'line': b'checking ./install/mypkg/lib/python3.8/site-packages/mypkg/__init__.py\n'}
+[0.831830] (mypkg) StdoutLine: {'line': b'checking ./install/mypkg/lib/python3.8/site-packages/mypkg/listener.py\n'}
+[0.831870] (mypkg) StdoutLine: {'line': b'checking ./install/mypkg/lib/python3.8/site-packages/mypkg/talker.py\n'}
+[0.831901] (mypkg) StdoutLine: {'line': b'checking ./listener.py\n'}
+[0.831931] (mypkg) StdoutLine: {'line': b'checking ./mypkg/__init__.py\n'}
+[0.831961] (mypkg) StdoutLine: {'line': b'checking ./mypkg/listener.py\n'}
+[0.831991] (mypkg) StdoutLine: {'line': b'checking ./mypkg/talker.py\n'}
+[0.832019] (mypkg) StdoutLine: {'line': b'checking ./setup.py\n'}
+[0.832047] (mypkg) StdoutLine: {'line': b'checking ./talker.py\n'}
+[0.832075] (mypkg) StdoutLine: {'line': b'checking ./test/test_copyright.py\n'}
+[0.832103] (mypkg) StdoutLine: {'line': b'checking ./test/test_flake8.py\n'}
+[0.832130] (mypkg) StdoutLine: {'line': b'checking ./test/test_pep257.py\n'}
+[0.832158] (mypkg) StdoutLine: {'line': b'checking test/test_copyright.py\n'}
+[0.832187] (mypkg) StdoutLine: {'line': b'checking test/test_flake8.py\n'}
+[0.832215] (mypkg) StdoutLine: {'line': b'checking test/test_pep257.py\n'}
+[0.832244] (mypkg) StdoutLine: {'line': b'----------------------------- Captured stderr call -----------------------------\n'}
+[0.832272] (mypkg) StdoutLine: {'line': b'Error in file ./build/mypkg/build/lib/mypkg/listener.py: Cannot parse file.\n'}
+[0.832302] (mypkg) StdoutLine: {'line': b'./build/mypkg/build/lib/mypkg/listener.py: Cannot parse file.\n'}
+[0.832332] (mypkg) StdoutLine: {'line': b'Error in file ./install/mypkg/lib/python3.8/site-packages/mypkg/listener.py: Cannot parse file.\n'}
+[0.832361] (mypkg) StdoutLine: {'line': b'./install/mypkg/lib/python3.8/site-packages/mypkg/listener.py: Cannot parse file.\n'}
+[0.832390] (mypkg) StdoutLine: {'line': b'Error in file ./mypkg/listener.py: Cannot parse file.\n'}
+[0.832419] (mypkg) StdoutLine: {'line': b'./mypkg/listener.py: Cannot parse file.\n'}
+[0.832447] (mypkg) StdoutLine: {'line': b'3 errors\n'}
+[0.832475] (mypkg) StderrLine: {'line': b'\x1b[33m=============================== warnings summary ===============================\x1b[0m\n'}
+[0.832528] (mypkg) StderrLine: {'line': b'/usr/lib/python3/dist-packages/pydocstyle/config.py:6\n'}
+[0.832559] (mypkg) StderrLine: {'line': b"  Warning: Using or importing the ABCs from 'collections' instead of from 'collections.abc' is deprecated since Python 3.3, and in 3.10 it will stop working\n"}
+[0.832592] (mypkg) StderrLine: {'line': b'\n'}
+[0.832623] (mypkg) StderrLine: {'line': b'-- Docs: https://docs.pytest.org/en/latest/warnings.html\n'}
+[0.832651] (mypkg) StdoutLine: {'line': b'--- generated xml file: /home/aoki/ros2_ws/src/mypkg/build/mypkg/pytest.xml ----\n'}
+[0.832684] (mypkg) StdoutLine: {'line': b'\x1b[31m\x1b[1m===================== 3 failed, 1 warnings in 0.29 seconds =====================\x1b[0m\n'}
+[0.861998] (mypkg) CommandEnded: {'returncode': 1}
+[0.862371] (mypkg) TestFailure: {'identifier': 'mypkg'}
+[0.862404] (mypkg) JobEnded: {'identifier': 'mypkg', 'rc': 0}
+[0.863505] (-) EventReactorShutdown: {}

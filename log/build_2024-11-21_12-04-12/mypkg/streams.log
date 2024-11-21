@@ -1,0 +1,33 @@
+[0.328s] Invoking command in '/home/aoki/ros2_ws/src/mypkg': PYTHONPATH=/home/aoki/ros2_ws/src/mypkg/build/mypkg/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/aoki/ros2_ws/src/mypkg/install/mypkg/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py egg_info --egg-base build/mypkg build --build-base /home/aoki/ros2_ws/src/mypkg/build/mypkg/build install --record /home/aoki/ros2_ws/src/mypkg/build/mypkg/install.log --install-scripts $base/lib/mypkg --single-version-externally-managed install_data
+[0.433s] running egg_info
+[0.433s] writing build/mypkg/mypkg.egg-info/PKG-INFO
+[0.433s] writing dependency_links to build/mypkg/mypkg.egg-info/dependency_links.txt
+[0.434s] writing entry points to build/mypkg/mypkg.egg-info/entry_points.txt
+[0.434s] writing requirements to build/mypkg/mypkg.egg-info/requires.txt
+[0.434s] writing top-level names to build/mypkg/mypkg.egg-info/top_level.txt
+[0.454s] reading manifest file 'build/mypkg/mypkg.egg-info/SOURCES.txt'
+[0.455s] writing manifest file 'build/mypkg/mypkg.egg-info/SOURCES.txt'
+[0.455s] running build
+[0.455s] running build_py
+[0.455s] copying mypkg/listener.py -> /home/aoki/ros2_ws/src/mypkg/build/mypkg/build/lib/mypkg
+[0.455s] copying mypkg/talker.py -> /home/aoki/ros2_ws/src/mypkg/build/mypkg/build/lib/mypkg
+[0.456s] running install
+[0.456s] running install_lib
+[0.457s] copying /home/aoki/ros2_ws/src/mypkg/build/mypkg/build/lib/mypkg/listener.py -> /home/aoki/ros2_ws/src/mypkg/install/mypkg/lib/python3.8/site-packages/mypkg
+[0.457s] copying /home/aoki/ros2_ws/src/mypkg/build/mypkg/build/lib/mypkg/talker.py -> /home/aoki/ros2_ws/src/mypkg/install/mypkg/lib/python3.8/site-packages/mypkg
+[0.457s] byte-compiling /home/aoki/ros2_ws/src/mypkg/install/mypkg/lib/python3.8/site-packages/mypkg/listener.py to listener.cpython-38.pyc
+[0.458s]   File "/home/aoki/ros2_ws/src/mypkg/install/mypkg/lib/python3.8/site-packages/mypkg/listener.py", line 9
+[0.458s]     def cb(msg):
+[0.458s]     ^
+[0.458s] SyntaxError: invalid syntax
+[0.458s] 
+[0.458s] byte-compiling /home/aoki/ros2_ws/src/mypkg/install/mypkg/lib/python3.8/site-packages/mypkg/talker.py to talker.cpython-38.pyc
+[0.458s] running install_data
+[0.459s] running install_egg_info
+[0.459s] removing '/home/aoki/ros2_ws/src/mypkg/install/mypkg/lib/python3.8/site-packages/mypkg-0.0.0-py3.8.egg-info' (and everything under it)
+[0.459s] Copying build/mypkg/mypkg.egg-info to /home/aoki/ros2_ws/src/mypkg/install/mypkg/lib/python3.8/site-packages/mypkg-0.0.0-py3.8.egg-info
+[0.460s] running install_scripts
+[0.470s] Installing listener script to /home/aoki/ros2_ws/src/mypkg/install/mypkg/lib/mypkg
+[0.470s] Installing talker script to /home/aoki/ros2_ws/src/mypkg/install/mypkg/lib/mypkg
+[0.470s] writing list of installed files to '/home/aoki/ros2_ws/src/mypkg/build/mypkg/install.log'
+[0.482s] Invoked command in '/home/aoki/ros2_ws/src/mypkg' returned '0': PYTHONPATH=/home/aoki/ros2_ws/src/mypkg/build/mypkg/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/aoki/ros2_ws/src/mypkg/install/mypkg/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py egg_info --egg-base build/mypkg build --build-base /home/aoki/ros2_ws/src/mypkg/build/mypkg/build install --record /home/aoki/ros2_ws/src/mypkg/build/mypkg/install.log --install-scripts $base/lib/mypkg --single-version-externally-managed install_data

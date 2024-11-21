@@ -1,5 +1,7 @@
 from setuptools import setup
 
+import os
+from glob import glob
 package_name = 'mypkg'
 
 setup(
@@ -10,18 +12,18 @@ setup(
         ('share/ament_index/resource_index/packages',
             ['resource/' + package_name]),
         ('share/' + package_name, ['package.xml']),
-    ],
+        (os.path.join('share', package_name), glob('launch/*.launch.py'))    ],
     install_requires=['setuptools'],
     zip_safe=True,
-    maintainer='Aoki Andou',
-    maintainer_email='s23C1006CV@s.chibakoudai.jp',
-    description='a package for practice',
+    maintainer='shimodaira',
+    maintainer_email='s23c1006cv@s.chibakoudai.jp',
+    description='ロボットシステム学のサンプル',
     license='BSD-3-Clause',
     tests_require=['pytest'],
     entry_points={
         'console_scripts': [
             'talker = mypkg.talker:main',
-            #'listener = mypkg.listener:main',
+            'listener = mypkg.listener:main',
         ],
     },
 )
