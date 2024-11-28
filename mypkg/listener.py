@@ -13,4 +13,5 @@ def cb(msg):
 
 
 def main():
-    pub = node.create_subscription(Int16, "countup", cb, 10)    rclpy.spin(node)
+    pub = node.create_subscription(Int16, "countup", cb, 10)
+    rclpy.spin(node)
